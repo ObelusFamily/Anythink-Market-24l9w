@@ -2,7 +2,7 @@
 
 To start the app use Docker. It will start both frontend and backend, including all the relevant dependencies, and the db.
 
-Please find more info about each part in the relevant Readme file ([frontend](frontend/readme.md) and [backend](backend/README.md)).
+Please find more info about each part in the relevant Readme file ([frontend](frontend/readme.md) and [backend](backend/README.rst)).
 
 ## Development
 
@@ -10,4 +10,20 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+```shell
+  # Clone the repo locally:
+  git clone git@github.com:ObelusFamily/Anythink-Market-24l9w.git Anythink-Market
+
+  # Go into the project folder
+  cd Anythink-Market
+
+  # Run the docker compose command to bring up the database, backend and frontend:
+  docker compose up -d
+
+  # Test the backend:
+  open http://localhost:3000/api/ping
+
+  # Test the frontend:
+  open http://localhost:3001/register  
+```
+
